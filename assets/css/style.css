@@ -1,0 +1,385 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background:rgb(29, 27, 27);
+}
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+    color: #fff;
+}
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: rgb(119, 116, 116);
+	}
+   header nav{
+        text-align: right;
+        padding: 30px 50px 0 0;
+    }
+    
+    header nav > a{
+        color:#fff;
+        font-weight: 700;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    header nav > a:hover{
+        text-decoration: underline;
+        color: #ffc107;
+    }
+
+    /*acerca de */
+.acerca-de{
+    padding-top: 10px;
+    background-color: #e0e7eb;
+}
+.acerca-de h3{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+.acerca-de  p{
+    color: #040505;
+    text-align: justify;
+    padding: 15px;
+}
+ .contenedor-acerca-de{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+ .contenedor-acerca-de .card-acerca{
+    width:29%;
+    background: #333;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    margin:20px;
+}
+.contenedor-acerca-de .card-acerca img{
+    width: 88%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);
+    margin-right: 3%;
+}
+
+.contenedor-acerca-de .card-acerca i{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contenedor-acerca-de .card-acerca h4{
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contenedor-acerca-de .card-acerca p{
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/*Termina acerca de*/
+
+/*Inicia servicios*/
+.servicio{
+    background: rgb(74, 75, 72);
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*Servicos*/
+.servicio .img-servicio{
+    width: 50%;  
+    box-shadow: rgba(0, 0, 0, 0.6);
+}
+
+.servicio .img-servicio img{
+    padding: 8px;
+    box-shadow:rgba(0, 0, 0, 0.979);
+     width: 90%;
+     border-radius: 6%;
+ }
+
+.servicio .contenido-servicio{
+    width: 50%;
+}
+.servicio .contenido-servicio h3{
+   color: #e0e7eb;
+}
+.servicio .contenido-servicio p{
+    padding: 15px;
+    text-align: justify ;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.servicio .contenido-servicio ul{
+    list-style: none;
+    color: #fff;
+}
+
+.servicio .contenido-servicio ul li{
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+/*servicios final*/
+
+/*Galeria*/
+.galeria-contenedor{
+    margin-top:20px;
+    background: rgba(243, 232, 232, 0);
+    width: 100%;
+}
+.galeria-contenedor h3{
+    text-align: center;
+}
+.galeria{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.galeria-contenedor p{
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.galeria-img{
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); 
+}
+.galeria-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    vertical-align: top;
+    transform: scale(1);
+    transition: transform 2s;
+}
+
+.galeria-img img:hover{
+    transform: scale(1.3);
+}
+
+.extra-galeria{
+    position: absolute;
+    background: rgba(41, 39, 39, 0.5);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(100%,100%);
+    transition: transform 2s;
+}
+
+.galeria-img:hover .extra-galeria{
+    transform: translate(0);
+}
+
+.extra-galeria p{
+    color: #fff;
+}
+/*galeria*/
+
+/*Precios*/
+.precios h3{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.precio-tabla{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgba(243, 242, 242, 0.979);
+}
+
+.precio-tabla .tabla{
+    width: 28%;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: rgb(197, 191, 191);
+    margin: 30px;
+}
+
+.precio-tabla .tabla h5{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.precio-tabla .tabla .precio{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.precio-tabla .tabla ul{
+    list-style: none;
+}
+
+.precio-tabla .tabla ul li{
+    padding: 25px 0;
+    text-align: center;
+
+}
+
+.precio-tabla .tabla a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffc107f1;
+    text-align: center;
+    
+    margin-bottom: 20px;
+    color: rgb(250, 232, 232);
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.precio-tabla .tabla a:hover{
+    background:rgb(53, 37, 37)
+}
+
+/*SLIDER*/
+/* Desde aqui Inicia la animacion para las imagenes*/ 
+.contenedor1{
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+.contenedor1 h3{
+    padding: 0px;
+   font-size: 25px;
+   width: 100%;
+   text-align: center;
+}
+.slider-contenedor{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.slider-test{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+}
+.slider-test h2{
+   padding: 10px;
+}
+
+ .imgcmtario{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer{
+    background: #414141;
+    padding: 60px 0;
+    
+}
+.footer-contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+}
+.footer-contenedor.contacto{
+    text-align: center;
+    width: 50%;
+}
+.footer-contenedor .contacto h4{
+    color: #fff;
+    border-bottom: 3px solid #efecf0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.contacto p{
+    color: rgb(236, 229, 229);   
+}
+.contacto i{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #f4f8f4;
+    padding: 15px;
+} 
+@media (max-width: 720px) {
+    .contenido-header{
+        flex-direction: column;
+        text-align: center;
+    }
+    #logo-header{
+    display: none;
+    }
+    .contenido-header .img-header{
+        width: 80%;
+        padding-top: 40px;
+    }
+
+    .contenedor-acerca-de .card-acerca{
+        width: 90%;
+    }
+    .servicio .img-servicio{
+        width: 90%;
+    }
+    .servicio .contenido-servicio{
+        width: 92%;
+    }
+    .galeria-img{
+        width: 100%;
+    } 
+    .precio-tabla .tabla{
+        width: 100%; 
+    }
+    footer{width: 100%;}
+}
